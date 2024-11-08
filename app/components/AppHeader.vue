@@ -12,12 +12,14 @@ const links = computed(() => [{
   to: '#pricing',
   icon: 'i-heroicons-credit-card',
   active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
-}, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  icon: 'i-heroicons-academic-cap',
-  active: activeHeadings.value.includes('testimonials')
-}, {
+},
+// {
+//   label: 'Testimonials',
+//   to: '#testimonials',
+//   icon: 'i-heroicons-academic-cap',
+//   active: activeHeadings.value.includes('testimonials')
+// },
+{
   label: 'FAQ',
   to: '#faq',
   icon: 'i-heroicons-question-mark-circle',
@@ -37,21 +39,13 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge
-        label="Landing"
-        variant="subtle"
-        class="mb-0.5"
-      />
+      Preview Environments
+      <UBadge label="alpha" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #right>
-      <UButton
-        label="Sign in"
-        color="white"
-        variant="ghost"
-        trailing-icon="i-heroicons-arrow-right-20-solid"
-        class="hidden lg:flex"
-      />
+      <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid"
+        class="hidden lg:flex" />
     </template>
 
     <template #panel>
@@ -59,16 +53,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 
       <UDivider class="my-6" />
 
-      <UButton
-        label="Sign in"
-        color="white"
-        block
-        class="mb-3"
-      />
-      <UButton
-        label="Get started"
-        block
-      />
+      <UButton label="Sign in" color="white" block class="mb-3" />
+      <UButton label="Get started" block />
     </template>
   </UHeader>
 </template>

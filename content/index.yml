@@ -1,11 +1,11 @@
 title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: Build your landing in seconds
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  title: Preview Environments
+  description: Test your changes on a live preview environment before merging them
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Github
+    to: https://github.com/Coflnet/pr-env
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
@@ -13,14 +13,14 @@ hero:
       trailing: true
       to: '#features'
       size: xl
-    - label: Use this template
-      icon: i-simple-icons-github
-      size: xl
-      color: gray
-      to: https://github.com/nuxt-ui-pro/landing
-      target: _blank
+    # - label: Use this template
+    #   icon: i-simple-icons-github
+    #   size: xl
+    #   color: gray
+    #   to: https://github.com/nuxt-ui-pro/landing
+    #   target: _blank
 logos:
-  title: Trusted by the world's best
+  title: Technologies we use
   icons:
     - i-simple-icons-amazonaws
     - i-simple-icons-heroku
@@ -30,77 +30,118 @@ logos:
 features:
   headline: Features
   title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: ""
   items:
     - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      description: You can use our software as a service without any configuration or setup.
       icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+    - title: Self-hosted
+      description: If you want your can also host our software on your own servers.
       icon: i-heroicons-check
     - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      description: Secure your preview environments so only allowed users can access them.
       icon: i-heroicons-lock-closed
     - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      description: We run our entire infrastructure on dedicated servers to provide the best performance.
       icon: i-heroicons-rocket-launch
     - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      description: So far we havn't figured out how to make money with this so it's free.
       icon: i-heroicons-currency-dollar
     - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      description: We are trying our best to overengineer this as much as possible, so it can handle any load.
       icon: i-heroicons-chart-bar
 pricing:
   headline: Pricing
-  title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
+  title: Here is our current pricing plan
+  description: As described above, we are currently offering our service for free
   plans:
-    - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
-      align: top
+    - title: Self-hosted
+      description: A self-hosted plan if you really want to host it yourself
+      price: $0
+      align: bottom
       button:
         label: Get Started
-        color: gray
       features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
-    - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
+        - Unlimited repositories
+        - Unlimited preview environments
+        - Unlimited team members
+        - Unlimited concurrent builds
+    - title: Free
+      description: A free plan for individuals
+      price: $0
       highlight: true
       scale: true
-      align: top
-      button:
-        label: Get Started
-      features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
-    - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
-      align: top
+      align: bottom
       button:
         label: Get Started
         color: gray
       features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+        - Connect up to 25 repositories
+        - Create up to 100 preview environments
+        - Invite up to 5 team members
+        - 1 concurrent build per repository
+    - title: Enterprise
+      description: A custom plan, not that you would need it
+      price: contact us
+      highlight: false
+      scale: false
+      align: bottom
+      button:
+        label: Get Started
+        color: gray
+      features:
+        - Everything in the free plan
+        - Priority feature requests
+        - Support if necessary
+        - Allowence to pay us
+
+
+    # - title: Basic
+    #   description: A basic plan for individuals.
+    #   price: $9.99
+    #   align: top
+    #   button:
+    #     label: Get Started
+    #     color: gray
+    #   features:
+    #     - 1 GB Storage
+    #     - 1 Email Account
+    #     - 1 Domain
+    #     - 1 Website
+    #     - 1 Database
+    #     - 1 SSL Certificate
+    #     - 1 Support Ticket
+    # - title: Standard
+    #   description: A standard plan for small teams.
+    #   price: $19.99
+    #   highlight: true
+    #   scale: true
+    #   align: top
+    #   button:
+    #     label: Get Started
+    #   features:
+    #     - 10 GB Storage
+    #     - 10 Email Accounts
+    #     - 10 Domains
+    #     - 10 Websites
+    #     - 10 Databases
+    #     - 10 SSL Certificates
+    #     - 10 Support Tickets
+    # - title: Premium
+    #   description: A premium plan for large teams.
+    #   price: $29.99
+    #   align: top
+    #   button:
+    #     label: Get Started
+    #     color: gray
+    #   features:
+    #     - 100 GB Storage
+    #     - 100 Email Accounts
+    #     - 100 Domains
+    #     - 100 Websites
+    #     - 100 Databases
+    #     - 100 SSL Certificates
+    #     - 100 Support Tickets
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
@@ -156,18 +197,36 @@ cta:
       size: xl
 faq:
   title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  description: We have not received any questions yet, but here are some we made up
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+    - label: What type of applications are supported
+      content: |
+        At the moment we only support stateless applications with at least one HTTP endpoint.
+        So we mainly target web applications (React, Vue, Next, Nuxt, etc.)
+        But you can also use it for APIs or other types of applications that have an HTTP endpoint.
+        The second requirement is that your application is deployed using Docker.
+        We are working on adding support for stateful applications as well, but it's not ready yet.
       defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
+    - label: What Git providers are supported?
+      content: |
+        We only support Github at the moment, but our roadmap includes support for Gitlab as well.
+        If you need support for other Git providers, please let us know.
+    - label: What container registries are supported?
+      content: We use kaniko to build the Docker images, so any container registry that supports the Docker registry API should work.
+    - label: How do I connect my repositories?
+      content: |
+        If you use our hosted version, you can connect your repositories in a easy to use UI.
+        So you don't have to worry about setting up webhooks or anything like that.
+        If you use the self-hosted version, you have to set up a webhook in your repository that points to the webhook endpoint of our service.
+        We are doing our best to make this as easy as possible, but it's still a bit of manual work.
     - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+      content: |
+        We don't have a support team, since no one has asked for support yet.
+        But if you are ready to pay us, we can offer you support.
+        We do have some b2b projects where we already offer a 24/7 support with help center and everything.
+        You can get this as well, but it does cost a bit.
+    - label: What is Coflnet?
+      content: |
+        Coflnet is the company behind this service.
+        We do other public services as well, check out https://sky.coflnet.com for our Skyblock application.
+        We also do some b2b projects, but we can't talk about them.
