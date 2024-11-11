@@ -1,5 +1,5 @@
-title: Nuxt UI Pro - Landing template
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: Preview Environment Operator
+description: Test your changes on a live preview environment before merging them
 hero:
   title: Preview Environments
   description: Test your changes on a live preview environment before merging them

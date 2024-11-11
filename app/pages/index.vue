@@ -25,7 +25,7 @@ useSeoMeta({
         </UBadge>
       </template>
 
-      <ImagePlaceholder />
+      <NuxtImg src="/preview-image.png" />
 
       <!--
       <ULandingLogos :title="page.logos.title" align="center">
