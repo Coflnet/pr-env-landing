@@ -34,18 +34,32 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     document.querySelector('#faq')
   ])
 })
+
+function signIn() {
+  window.location.href = 'https://dash.tmpenv.app'
+}
 </script>
 
 <template>
   <UHeader :links="links">
     <template #logo>
       Preview Environments
-      <UBadge label="alpha" variant="subtle" class="mb-0.5" />
+      <UBadge
+        label="alpha"
+        variant="subtle"
+        class="mb-0.5"
+      />
     </template>
 
     <template #right>
-      <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid"
-        class="hidden lg:flex" />
+      <UButton
+        label="Sign in"
+        color="white"
+        variant="ghost"
+        trailing-icon="i-heroicons-arrow-right-20-solid"
+        class="hidden lg:flex"
+        @click="signIn"
+      />
     </template>
 
     <template #panel>
@@ -53,8 +67,16 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 
       <UDivider class="my-6" />
 
-      <UButton label="Sign in" color="white" block class="mb-3" />
-      <UButton label="Get started" block />
+      <UButton
+        label="Sign in"
+        color="white"
+        block
+        class="mb-3"
+      />
+      <UButton
+        label="Get started"
+        block
+      />
     </template>
   </UHeader>
 </template>
